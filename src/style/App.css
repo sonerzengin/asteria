@@ -1,0 +1,146 @@
+.App {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 94px;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-color: #ECFAFF;
+}
+
+.menu__list {
+  font-weight: 400;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 40px 0px;
+  color: #585858;
+  font-size: 14px;
+}
+.menu__list li:hover {
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu__left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__line {
+  width: 1px;
+  height: 24px;
+  background-color: #0D0D2D;
+}
+
+.asteriahotel__img {
+  max-height: 500px;
+}
+
+.section1 {
+  margin: 214px 0;
+}
+.section1 div {
+  padding-bottom: 5px;
+}
+
+.section1__left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.section1__left .section1__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #0D0D2D;
+}
+.section1__left .section1__subtitle {
+  font-size: 25px;
+  line-height: 27.5px;
+  color: #C38976;
+  font-weight: 400;
+}
+.section1__left .section1__text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.82px;
+}
+.section1__left .section1__text p {
+  padding: 5px 0;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 214px;
+}
+.section2 div {
+  padding-bottom: 10px;
+}
+.section2 div:first-child {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #0D0D2D;
+}
+.section2 div:nth-child(2) {
+  font-size: 25px;
+  line-height: 27.5px;
+  color: #C38976;
+  font-weight: 400;
+}
+.section2 div:nth-child(3) {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.82px;
+  padding: 0 50px;
+}
+.section2 div:nth-child(4) {
+  display: flex;
+  justify-content: end;
+}
+.section2 div:nth-child(4) .section2__orangebox {
+  position: absolute;
+  margin-top: 57px;
+  width: 500px;
+  height: 100px;
+  background-color: #E7A954;
+  z-index: 100;
+  text-align: left;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 div:nth-child(4) .section2__orangebox p:first-child {
+  font-size: 36px;
+  line-height: 36px;
+  color: #0D0D2D;
+}
+.section2 div:nth-child(4) .section2__orangebox p:nth-child(2) {
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  margin-top: -9px;
+}
+.section2 div:nth-child(4) .section2__orangebox .section2__icon {
+  width: 60px;
+  height: auto;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 50px;
+}/*# sourceMappingURL=App.css.map */
