@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Hamburger from './Hamburger'
 import Logo from './Logo'
 
 import Navbar from './Navbar'
 
 function Header() {
+  const [display,setDisplay] = useState(false)
+
+  useEffect(() => {
+    if(window.innerWidth < 992){
+      setDisplay(true)
+    }
+  },[])
+
   return (
     <div className='header'>
-      <div className="container header__content">
+      <div className="container ">
             <div className="row">
-                <div className="col-md-2"><Logo /></div>
-                <div className="col-md-10"><Navbar /></div>
+                <div className="col-6 col-sm-6 col-md-2"><Logo /></div>
+                <div className="col-6 col-sm-6 col-md-10 header__content">{display === false ?  <Navbar /> : <Hamburger />}</div>
+                
             </div>
       </div>
     </div>

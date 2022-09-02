@@ -4,6 +4,7 @@ $secondaryfont : 'Rubik', sans-serif;
 $textColor1 : #585858;
 $textColor2 : #0D0D2D ;
 
+
 @mixin reset-list {
     margin: 0;
     padding: 0;
@@ -15,12 +16,19 @@ $textColor2 : #0D0D2D ;
     line-height: 60px;
     color: $textColor2;
 }
+@mixin titleMobil {
+    font-size: 35px !important;
+    font-weight: 400;
+    line-height: 35px !important;
+    color: $textColor2;
+}
 @mixin subtitle {
         font-size: 25px;
         line-height: 27.5px;
         color: #C38976;
         font-weight: 400;
 }
+
 @mixin text {
         font-size: 17px;
         font-weight: 300;
@@ -298,6 +306,94 @@ $textColor2 : #0D0D2D ;
     }
     
 }
+
+
+//Responsive
+
+
+@media (max-width: 991.98px) { 
+    .footer__sub{
+        flex-direction: column;
+    }
+    .footer__list {
+        grid-template-columns: repeat(3,2fr) !important;
+    }
+    .section2__orangebox {
+        width: 45% !important;
+    }
+    .navbar  {
+        display: none !important;
+    }
+    .menu__list {
+        display: none !important;
+    }
+    .header__content{
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+    }
+    
+    
+ }
+
+ @media (max-width: 767.98px) { 
+    .footer{
+        padding-top: 220px;
+    }
+    .section2 {
+        div{
+        text-align: left !important;
+        
+        }
+        div:first-child{
+        justify-content:flex-start;
+        @include titleMobil;
+        text-align:left !important;
+        }
+        div:nth-child(3){
+            padding: 0 ;
+        }
+        .section2__orangebox {
+            margin-top: 150px !important;
+            height: 58px !important;
+            width: 290px !important;
+            div{
+                padding-top: 5px;
+                p:first-child{
+                    font-size: 20px !important;
+                    font-weight: 500 !important;
+                }
+                p:nth-child(2){
+                    display: none;
+                }
+
+            }
+            .section2__icon{
+                width: 30px !important;
+                padding: 5px !important;
+            }
+        }
+    }
+    .section1__title {
+        @include titleMobil ;
+    }
+    .section3__items {
+        align-items: flex-start !important;
+        p{
+            display: none;
+        }
+    }
+    .footer__sub{
+            .footer__bottom{
+            text-align: center !important;
+            }
+            
+            
+        
+    }
+   
+  }
+
 
 
 

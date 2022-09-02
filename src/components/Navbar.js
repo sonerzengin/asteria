@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
+  IconButton,
 
 } from '@chakra-ui/react';
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons';
 
 
 
 function Navbar() {
+  const [display,setDisplay] = useState(0)
+
+useEffect(() => {
+  if(window.innerWidth < 992){
+    setDisplay(1)
+  }
+},[])
+
+
   return (
-    <div className='row'>
-        <div className="col-md-3 col-xxl-2 menu__left">
+    <div className='row '>
+        <div className="col-md-3 col-xxl-2 menu__left navbar">
         <div>
         <Menu>
           <MenuButton
@@ -63,8 +73,11 @@ function Navbar() {
                 <li>SPA & WELLNESS</li>
                 <li>CONFERENCE</li>
                 <li>SPORT</li>
+                
             </ul>
+            
         </div>
+        
     </div>
   )
 }
