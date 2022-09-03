@@ -63,7 +63,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <hr />
+               
                 <div className='footer__bottom'>
                     © 2018 All Rights Reserved.
                 </div>

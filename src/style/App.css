@@ -83,7 +83,7 @@
 .section2 {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 214px;
@@ -91,13 +91,13 @@
 .section2 div {
   padding-bottom: 10px;
 }
-.section2 div:first-child {
+.section2 .baslik {
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
   color: #0D0D2D;
 }
-.section2 div:nth-child(2) {
+.section2 .altbaslik {
   font-size: 25px;
   line-height: 27.5px;
   color: #C38976;
@@ -108,6 +108,7 @@
   font-weight: 300;
   line-height: 24.82px;
   padding: 0 50px;
+  margin-bottom: 10px;
 }
 .section2 div:nth-child(4) {
   display: flex;
@@ -284,6 +285,11 @@
   display: none;
 }
 
+@media (max-width: 1398.98px) {
+  .footer__list2 {
+    grid-template-columns: 1.7fr 1.7fr 2fr !important;
+  }
+}
 @media (max-width: 991.98px) {
   .footer__sub {
     flex-direction: column;
@@ -319,15 +325,14 @@
   .footer {
     padding-top: 220px;
   }
-  .section2 div {
+  .baslik {
     text-align: left !important;
-  }
-  .section2 div:first-child {
-    justify-content: flex-start;
     font-size: 35px !important;
     font-weight: 400;
     line-height: 35px !important;
     color: #0D0D2D;
+  }
+  .section2 {
     text-align: left !important;
   }
   .section2 div:nth-child(3) {
