@@ -1,7 +1,9 @@
 import React from 'react'
 import Owl from './Owl'
 
+
 function Footer() {
+   
   return (
     <div className='footer'>
     <div className='container'>
@@ -40,7 +42,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <hr />
+                
             <div className="footer__sub">
             <div >
                     <ul className='footer__list2'>
@@ -61,7 +63,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <hr/>
+                <hr />
                 <div className='footer__bottom'>
                     © 2018 All Rights Reserved.
                 </div>

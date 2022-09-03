@@ -9,7 +9,7 @@ function Hamburger() {
     <div className='hamburger'>
       <IconButton
           aria-label="Open Menu"
-          size="md"
+          size="lg"
           
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay('flex')}

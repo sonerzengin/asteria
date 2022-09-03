@@ -26,9 +26,12 @@ function Owl() {
                     items:1.7,
                    },
                 600:{
-                    items:3,
+                    items:2.5,
                     },
                 1000:{
+                    items:3.2,
+                },    
+                1200:{
                     items:5,
                     }}
               }>  

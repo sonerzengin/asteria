@@ -81,7 +81,7 @@ $textColor2 : #0D0D2D ;
     
 }
 .asteriahotel__img {
-    max-height: 500px;
+    max-height: 600px;
     
 }
 .section1 {
@@ -119,7 +119,7 @@ $textColor2 : #0D0D2D ;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 214px;
-
+    
     div{
         padding-bottom: 10px;
     }
@@ -144,12 +144,28 @@ $textColor2 : #0D0D2D ;
             width:500px ;
             height: 100px;
             background-color:#E7A954 ;
-            z-index: 100;
+            z-index: 2;
             text-align: left;
             padding: 0 40px; 
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            &:hover {
+                transition: all 0.5s ;
+                cursor: pointer;
+                padding: 0 20px 0 40px;
+                box-shadow: -15px 8px 36px 3px rgb(0, 0, 0);
+                p:first-child {
+                    transition: all 0.5s ;
+                    font-size: 38px;
+                }
+                p:nth-child(2) {
+                    transition: all 0.5s ;
+                    font-size: 28px;
+                    margin-top: 0;
+                }
+            }
 
             p:first-child{
                 font-size: 36px;
@@ -194,7 +210,6 @@ $textColor2 : #0D0D2D ;
     .carousel__img  
     {      
         height: 219px; 
-        width: 180px;
         border-radius: 8px;
        
     }
@@ -242,6 +257,7 @@ $textColor2 : #0D0D2D ;
         font-family: $secondaryfont;
         font-weight: 300;
         list-style:none ;
+        border-bottom: 1px solid #585858;
         display: grid;
         grid-template-columns: repeat(5,2fr);
         row-gap: 12px;
@@ -265,8 +281,9 @@ $textColor2 : #0D0D2D ;
         font-weight: 300;
         list-style:none ;
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
-        column-gap: 73px;
+        grid-template-columns: 2fr 2fr 2fr;
+        
+        
         row-gap: 12px;
         padding: 20px 0px;
         color: $textColor1;
@@ -294,8 +311,10 @@ $textColor2 : #0D0D2D ;
         font-family: $secondaryfont;
         font-weight: 300;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         font-size: 14px;
+        color: #585858;
     
         div:nth-child(2) {
             display: flex;
@@ -307,6 +326,15 @@ $textColor2 : #0D0D2D ;
     
 }
 
+.navbar {
+    display: block;
+}
+.hamburger {
+    display: none;
+}
+.asteriahotel__mobilimg{
+    display: none;
+}
 
 //Responsive
 
@@ -328,15 +356,24 @@ $textColor2 : #0D0D2D ;
         display: none !important;
     }
     .header__content{
-        display: flex;
+        display: flex !important ;
         justify-content: flex-end;
         align-items:center;
     }
-    
+    .hamburger {
+        display: block;
+    }
+    .footer__list2 {
+        border-bottom: 1px solid #585858;
+    }
+    .footer__bottom {
+        margin: 15px 0px ;
+    }
     
  }
 
  @media (max-width: 767.98px) { 
+    
     .footer{
         padding-top: 220px;
     }
@@ -384,15 +421,37 @@ $textColor2 : #0D0D2D ;
         }
     }
     .footer__sub{
+        
             .footer__bottom{
             text-align: center !important;
-            }
             
-            
-        
+        }
     }
+    
    
   }
+  @media (max-width: 575.98px) { 
+    .asteriahotel__img {
+        display: none;
+    }
+    .asteriahotel__mobilimg {
+        display: block;
+    }
+    .footer__list {
+        grid-template-columns: repeat(2,2fr) !important;
+    }
+    .footer__list2 {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .owl__items {
+        h3{
+            font-weight: 300 !important;
+        }
+    }
+    .footer__bottom {
+        margin-top: 10px;
+    }
+   }
 
 
 

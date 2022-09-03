@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  IconButton,
+
 
 } from '@chakra-ui/react';
-import { ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 
 
 
 function Navbar() {
-  const [display,setDisplay] = useState(0)
 
-useEffect(() => {
-  if(window.innerWidth < 992){
-    setDisplay(1)
-  }
-},[])
 
 
   return (
