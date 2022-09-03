@@ -111,11 +111,12 @@
 }
 .section2 div:nth-child(4) {
   display: flex;
-  justify-content: end;
+  justify-content: right;
 }
 .section2 div:nth-child(4) .section2__orangebox {
   position: absolute;
   margin-top: 57px;
+  margin-right: 0;
   width: 500px;
   height: 100px;
   background-color: #E7A954;
@@ -129,12 +130,7 @@
 .section2 div:nth-child(4) .section2__orangebox:hover {
   transition: all 0.5s;
   cursor: pointer;
-  padding: 0 20px 0 40px;
-  box-shadow: -15px 8px 15px 1px rgb(0, 0, 0);
-}
-.section2 div:nth-child(4) .section2__orangebox:hover p:nth-child(2) {
-  transition: all 0.5s;
-  margin-top: 0;
+  padding: 0 30px 0 48px;
 }
 .section2 div:nth-child(4) .section2__orangebox p:first-child {
   font-size: 36px;

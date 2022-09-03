@@ -135,12 +135,16 @@ $textColor2 : #0D0D2D ;
         padding: 0 50px;
         
     }
+    .section2img {
+        
+    }
     div:nth-child(4) {
         display: flex;
-        justify-content: end;
+        justify-content:right;
         .section2__orangebox{
             position: absolute;
             margin-top: 57px;
+            margin-right: 0;
             width:500px ;
             height: 100px;
             background-color:#E7A954 ;
@@ -154,14 +158,8 @@ $textColor2 : #0D0D2D ;
             &:hover {
                 transition: all 0.5s ;
                 cursor: pointer;
-                padding: 0 20px 0 40px;
-                box-shadow: -15px 8px 15px 1px rgb(0, 0, 0);
-               
-                p:nth-child(2) {
-                    transition: all 0.5s ;
-                    
-                    margin-top: 0;
-                }
+                padding: 0 30px 0 48px;
+                               
             }
 
             p:first-child{
