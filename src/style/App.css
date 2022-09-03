@@ -130,15 +130,10 @@
   transition: all 0.5s;
   cursor: pointer;
   padding: 0 20px 0 40px;
-  box-shadow: -15px 8px 36px 3px rgb(0, 0, 0);
-}
-.section2 div:nth-child(4) .section2__orangebox:hover p:first-child {
-  transition: all 0.5s;
-  font-size: 38px;
+  box-shadow: -15px 8px 15px 1px rgb(0, 0, 0);
 }
 .section2 div:nth-child(4) .section2__orangebox:hover p:nth-child(2) {
   transition: all 0.5s;
-  font-size: 28px;
   margin-top: 0;
 }
 .section2 div:nth-child(4) .section2__orangebox p:first-child {

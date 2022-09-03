@@ -17,7 +17,9 @@ function Section2() {
             </div>
             <div><Image src={iconArrow} className='section2__icon' /></div>
         </div>
+        <div>
         <Image className='section2img' src={section2img} />
+        </div>
         
       </div>
 
